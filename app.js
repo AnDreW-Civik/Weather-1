@@ -40,7 +40,7 @@ class Weather {
     }
 
 }
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${nameOfPalce}&units=metric&APPID=7e9bc4bbcbfc86f488a35a4314b633c0`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${nameOfPalce}&units=metric&APPID=7e9bc4bbcbfc86f488a35a4314b633c0&lang=ru`)
 .then((response) => response.json())
     .then((data) => new Weather(data, parent).render());
 
